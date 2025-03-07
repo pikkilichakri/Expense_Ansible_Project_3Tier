@@ -58,6 +58,7 @@
   - name: import mysql data
     community.mysql.mysql_db:
       state: import
+      name: all
       login_user: root
       login_password: ExpenseApp@1
       login_host: 10.0.0.65
