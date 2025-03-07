@@ -12,4 +12,10 @@
   - name: installed nodejs
     ansible.builtin.package:
       name: nodejs
-      state: installed
+      state: present
+
+  - name: create expense user
+    ansible.builtin.user:
+      name: expense
+      comment: omnamahashivaya 
+  
