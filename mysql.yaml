@@ -13,3 +13,15 @@
       name: mysqld
       state: started
       enabled: yes
+
+  - name: connect to myql-server
+    community.mysql.mysql_info:
+      login_user: root
+      login_password: ExpenseApp@1
+      login_host: 10.0.0.65 
+    register: mysql_info
+
+  - name: print the mysql info output
+    ansible.builtin.debug:
+      msg: "MYSQL INFO is :: {{ mysql_info }}"
+       
