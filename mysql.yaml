@@ -2,8 +2,8 @@
 - name: configure mysql server
   hosts: mysql
   become: yes # with  root access
-  # vars:
-  #   mysql_root_password: ExpenseApp@1
+  vars:
+    mysql_root_password: "ExpenseApp@1"
   tasks:
   - name: install MYSQL libraries
     ansible.builtin.pip:
