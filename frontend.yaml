@@ -2,3 +2,8 @@
 - name: configure backend server
   hosts: backend
   become: yes
+  tasks:
+  - name: install nginx
+    ansible.builtin.package:
+      name: nginx
+      state: installed
