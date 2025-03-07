@@ -61,7 +61,7 @@
       name: all
       login_user: root
       login_password: ExpenseApp@1
-      login_host: 10.0.0.65
+      login_host: 10.0.0.8
       target: /app/schema/backend.sql
 
   - name: daemon reload and restart service
